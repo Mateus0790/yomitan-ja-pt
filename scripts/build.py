@@ -7,7 +7,9 @@ do cache de tradução. Este script só confere o resultado versionado no Git:
 * todo ZIP tem index.json válido, format 3, sem citar 現代日葡辞典;
 * nenhum JSON contém marcas internas ("[EN→PT pendente]", spans translation-source);
 * o índice solto <Nome>.json é idêntico ao index.json de dentro do ZIP;
-* indexUrl/downloadUrl apontam para os assets do Release.
+* indexUrl/downloadUrl apontam para os assets do Release;
+* nos dicionários do projeto, as tags de cada entrada são separadas por espaço
+  (como o Yomitan exige) e todas estão declaradas no tag_bank.
 
 Uso: python scripts/build.py --public [--dist dist]
 """
@@ -33,13 +35,24 @@ def check(zip_path: Path, errors: list) -> None:
             errors.append(f"{zip_path}: format != 3")
         if "現代日葡辞典" in json.dumps(idx, ensure_ascii=False):
             errors.append(f"{zip_path}: index.json cita 現代日葡辞典")
+        ours = REPO in str(idx.get("indexUrl", ""))
+        declared: set = set()
+        used: set = set()
         for name in z.namelist():
             if name.endswith(".json"):
                 raw = z.read(name)
-                json.loads(raw)
+                data = json.loads(raw)
                 for bad in FORBIDDEN:
                     if bad in raw:
                         errors.append(f"{zip_path}/{name}: contém {bad.decode()}")
+                if ours and name.startswith("tag_bank"):
+                    declared.update(t[0] for t in data)
+                elif ours and name.startswith("term_bank"):
+                    for row in data:
+                        used.update((row[2] or "").split(" "))
+        # "person,pt-automatica" seria lido pelo Yomitan como uma única tag desconhecida
+        for tag in sorted(used - declared - {""}):
+            errors.append(f"{zip_path}: tag de entrada não declarada no tag_bank: {tag!r}")
         loose = zip_path.with_suffix(".json")
         # bônus copiados byte a byte (wty) mantêm os URLs de atualização da fonte
         if idx.get("isUpdatable") and REPO in str(idx.get("indexUrl", "")):

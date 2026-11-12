@@ -222,11 +222,11 @@ def apply_translations():
                                     return new
                                 return value
                             row[5] = tx(row[5])
-                            tags = [t for t in str(row[2]).split(",") if t and t not in {PENDING, AUTO, PARTIAL, REUSED}]
+                            tags = [t for t in re.split(r"[ ,]", str(row[2])) if t and t not in {PENDING, AUTO, PARTIAL, REUSED}]
                             if changed and unresolved: tags.append(PARTIAL); counts[PARTIAL] += 1
                             elif changed: tags.append(AUTO); counts[AUTO] += 1
                             else: tags.append(PENDING); counts[PENDING] += 1
-                            row[2] = ",".join(tags)
+                            row[2] = " ".join(tags)
                         data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
                     zout.writestr(info, data)
             os.replace(tmp, archive)

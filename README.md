@@ -19,15 +19,15 @@ Baixe os ZIPs na página de [Releases](https://github.com/CosmionLabs/yomitan-ja
 
 | Dicionário | Entradas | PT completo | Parcial | Ainda em inglês | Sem texto a traduzir* |
 |---|---:|---:|---:|---:|---:|
-| Jitendex-PT | 436.555 | 33.550 | 33.753 | 230.301 | 138.951 |
-| JMnedict-PT | 668.008 | 4.739 | 96 | 13.422 | 649.751 |
+| Jitendex-PT | 436.555 | 29.992 | 32.848 | 231.052 | 142.663 |
+| JMnedict-PT | 668.008 | 4.950 | 93 | 9.788 | 653.177 |
 | KANJIDIC-PT-completo | 1.944 kanji | todos | — | — | — |
 
 \* Redirecionamentos (`⟶ outra grafia`) e nomes romanizados, que não precisam de tradução.
 
 Tags exibidas no Yomitan:
 
-- `pt-automatica`: tradução automática (DeepL), ainda não revisada;
+- `pt-automatica`: tradução automática (DeepL/Gemini), ainda não revisada;
 - `pt-reaproveitada`: português vindo de fonte aberta;
 - `pt-parcial`: parte das glosas da entrada ainda em inglês;
 - `pt-pendente`: glosas ainda em inglês.
@@ -40,6 +40,6 @@ Os dados derivam de JMdict/JMnedict/KANJIDIC2 (EDRDG), Jitendex (© Stephen Krau
 
 ## Build e contribuição
 
-O pipeline completo está em `scripts/` e é descrito em [docs/BUILD.md](docs/BUILD.md). Correções manuais de tradução vão em `data/overrides/`. Veja [CONTRIBUTING.md](CONTRIBUTING.md).
+O pipeline completo está em `scripts/` e é descrito em [docs/BUILD.md](docs/BUILD.md). Correções manuais de tradução vão em `data/overrides/` (veja o [README da pasta](data/overrides/README.md)). Veja [CONTRIBUTING.md](CONTRIBUTING.md).
 
 English: Japanese → Brazilian Portuguese Yomitan dictionaries (pre-release; most Jitendex glosses are still in English and are tagged `pt-pendente`). Contributions and corrections are welcome.

@@ -4,7 +4,7 @@ Importe os ZIPs em **Yomitan → Dictionaries → Configure → Import**. Os arq
 
 | Arquivo | Conteúdo |
 |---|---|
-| `Jitendex-PT.zip` | Termos. 11% das entradas com glosa estão inteiramente em PT, 11% parciais e o resto em inglês |
+| `Jitendex-PT.zip` | Termos. 10% das entradas com glosa estão inteiramente em PT, 11% parciais e o resto em inglês |
 | `JMnedict-PT.zip` | Nomes próprios |
 | `KANJIDIC-PT-completo.zip` | Kanji, com significados em português |
 | `JMdict-PT-bonus.zip`, `wty-ja-pt.zip` | Bônus, idênticos às fontes abertas |

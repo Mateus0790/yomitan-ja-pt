@@ -62,8 +62,14 @@ def load_rows(z: zipfile.ZipFile):
         files[name] = data
         for row in data:
             if isinstance(row, list) and len(row) >= 2:
-                rows[(row[0], row[1])] = row
+                rows[row_key(row)] = row
     return files, rows
+
+
+def row_key(row):
+    # Termo e leitura não bastam: homógrafos (ウィーク "week"/"weak", nomes do
+    # JMnedict com a mesma grafia) receberiam todos o conteúdo do último.
+    return (row[0], row[1], row[6] if len(row) > 6 else None)
 
 
 def marker_flags(value: object) -> set[str]:
@@ -86,11 +92,13 @@ def marker_flags(value: object) -> set[str]:
 
 
 def clean_text(s: str) -> str:
-    s = html.unescape(s)
-    s = SPAN_RE.sub(lambda m: m.group(1), s)
-    s = MARKER_RE.sub("", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
+    cleaned = SPAN_RE.sub(lambda m: m.group(1), html.unescape(s))
+    cleaned = MARKER_RE.sub("", cleaned)
+    if cleaned == s:
+        # Sem marcas: o texto fica como está. Os espaços fazem parte da fonte
+        # (" | " nas atribuições, espaço ideográfico nas frases de exemplo).
+        return s
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def is_hybrid(s: str) -> bool:
@@ -135,6 +143,8 @@ def merge_visible(src, cur, flags: set[str], stats: dict, in_data=False):
     if isinstance(src, str):
         if in_data:
             return src
+        if JAPANESE_RE.search(src) and not re.search(r"[A-Za-z]{3,}", src):
+            return src  # leituras, formas e frases em japonês nunca são trocadas
         if isinstance(cur, str):
             return clean_visible(src, cur, flags, stats)
         return clean_text(src)
@@ -163,10 +173,11 @@ def add_status(row, status: str):
     row = copy.deepcopy(row)
     tags = row[2] if isinstance(row[2], str) else ""
     tag = STATUS_TAGS[status]
-    existing = [x for x in tags.split(",") if x]
+    # o Yomitan separa as tags de uma entrada por espaço
+    existing = [x for x in re.split(r"[ ,]", tags) if x]
     if tag not in existing:
         existing.append(tag)
-    row[2] = ",".join(existing)
+    row[2] = " ".join(existing)
     return row
 
 
@@ -233,7 +244,7 @@ def process_term_files(source: Path, current: Path, target: Path, label: str):
                     rows = source_files[info.filename]
                     new_rows = []
                     for srcrow in rows:
-                        currow = current_rows.get((srcrow[0], srcrow[1]))
+                        currow = current_rows.get(row_key(srcrow))
                         flags = set()
                         if currow is None:
                             currow = srcrow
