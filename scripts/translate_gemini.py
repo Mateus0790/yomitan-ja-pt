@@ -98,7 +98,7 @@ def collect(cached: set[str]) -> list[dict]:
                 if not (fn.startswith("term_bank") and fn.endswith(".json")):
                     continue
                 for row in json.loads(z.read(fn)):
-                    tags = (row[2] or "").split(",")
+                    tags = re.split(r"[ ,]", row[2] or "")
                     if "pt-pendente" not in tags and "pt-parcial" not in tags:
                         continue
                     items: list = []

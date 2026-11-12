@@ -11,5 +11,5 @@
   "targetLanguage": "pt",
   "description": "Termos japonês → português brasileiro (base Jitendex/JMdict). Pré-lançamento: parte das definições ainda está em inglês (tag pt-pendente/pt-parcial).",
   "attribution": "© CC BY-SA 4.0 Stephen Kraus 2023-2026\n\nYou are free to use, modify, and redistribute Jitendex files under the terms of the Creative Commons Attribution-ShareAlike License (V4.0)\n\nJitendex includes material from several copyrighted sources in compliance with the terms and conditions of those projects.\n\n• JMdict (EDICT, etc.) dictionary data is provided by the Electronic Dictionaries Research Group. Visit edrdg.org for more information.\n• Example sentences (Japanese and English) are provided by Tatoeba (https://tatoeba.org/). This data is licensed CC BY 2.0 FR.",
-  "revision": "2026-10-20"
+  "revision": "2026-11-12"
 }

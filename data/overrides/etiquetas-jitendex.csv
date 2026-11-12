@@ -1,0 +1,197 @@
+contexto,en,pt
+part-of-speech-info,noun,substantivo
+part-of-speech-info,exp,expressão
+part-of-speech-info,suru,verbo suru
+part-of-speech-info,transitive,transitivo
+part-of-speech-info,intransitive,intransitivo
+part-of-speech-info,5-dan,godan
+part-of-speech-info,5-dan (spec.),godan (espec.)
+part-of-speech-info,5-dan (irreg.),godan (irreg.)
+part-of-speech-info,1-dan,ichidan
+part-of-speech-info,1-dan (spec.),ichidan (espec.)
+part-of-speech-info,2-dan,nidan
+part-of-speech-info,4-dan,yodan
+part-of-speech-info,no-adj,adjetivo-no
+part-of-speech-info,na-adj,adjetivo-na
+part-of-speech-info,adjective,adjetivo
+part-of-speech-info,adjectival,adjetival
+part-of-speech-info,taru,adjetivo-taru
+part-of-speech-info,nari,adjetivo-nari
+part-of-speech-info,ku-adj,adjetivo-ku
+part-of-speech-info,shiku,adjetivo-shiku
+part-of-speech-info,aux-adj,adjetivo auxiliar
+part-of-speech-info,adverb,advérbio
+part-of-speech-info,to-adverb,advérbio com と
+part-of-speech-info,suffix,sufixo
+part-of-speech-info,prefix,prefixo
+part-of-speech-info,interjection,interjeição
+part-of-speech-info,pronoun,pronome
+part-of-speech-info,numeric,numeral
+part-of-speech-info,conjunction,conjunção
+part-of-speech-info,counter,contador
+part-of-speech-info,particle,partícula
+part-of-speech-info,aux-verb,verbo auxiliar
+part-of-speech-info,auxiliary,auxiliar
+part-of-speech-info,copula,cópula
+part-of-speech-info,zuru,verbo zuru
+part-of-speech-info,kuru,verbo kuru
+part-of-speech-info,su-verb,verbo su
+part-of-speech-info,ri-verb,verbo ri
+part-of-speech-info,nu-verb,verbo nu
+part-of-speech-info,verb,verbo
+part-of-speech-info,unclass,sem classificação
+misc-info,kana,geralmente em kana
+misc-info,archaic,arcaico
+misc-info,abbr.,abreviação
+misc-info,rare,raro
+misc-info,colloquial,coloquial
+misc-info,historical,histórico
+misc-info,mimetic,mimético
+misc-info,yoji,yojijukugo
+misc-info,idiom,expressão idiomática
+misc-info,slang,gíria
+misc-info,proverb,provérbio
+misc-info,honorific,honorífico
+misc-info,obsolete,obsoleto
+misc-info,formal,formal
+misc-info,dated,antiquado
+misc-info,derogatory,pejorativo
+misc-info,polite,polido
+misc-info,net slang,gíria da internet
+misc-info,humble,humilde
+misc-info,vulgar,vulgar
+misc-info,jocular,jocoso
+misc-info,poetical,poético
+misc-info,familiar,familiar
+misc-info,sensitive,sensível
+misc-info,childish,infantil
+misc-info,feminine,feminino
+misc-info,euphemism,eufemismo
+misc-info,masculine,masculino
+misc-info,manga slang,gíria de mangá
+misc-info,quote,citação
+misc-info,person,pessoa
+misc-info,legend,lenda
+misc-info,work,obra
+misc-info,religion,religião
+misc-info,place,lugar
+field-info,computing,informática
+field-info,food,culinária
+field-info,medical,medicina
+field-info,Buddhism,budismo
+field-info,math,matemática
+field-info,chemistry,química
+field-info,sports,esportes
+field-info,music,música
+field-info,anatomy,anatomia
+field-info,law,direito
+field-info,physics,física
+field-info,baseball,beisebol
+field-info,astronomy,astronomia
+field-info,sumō,sumô
+field-info,linguistics,linguística
+field-info,biology,biologia
+field-info,finance,finanças
+field-info,grammar,gramática
+field-info,mahjong,mahjong
+field-info,go (game),go (jogo)
+field-info,botany,botânica
+field-info,geology,geologia
+field-info,internet,internet
+field-info,video games,videogames
+field-info,martial arts,artes marciais
+field-info,military,militar
+field-info,card games,jogos de cartas
+field-info,Shintō,xintoísmo
+field-info,mineralogy,mineralogia
+field-info,printing,impressão
+field-info,Christian,cristianismo
+field-info,architecture,arquitetura
+field-info,business,negócios
+field-info,philosophy,filosofia
+field-info,trademark,marca registrada
+field-info,golf,golfe
+field-info,shōgi,shōgi
+field-info,hanafuda,hanafuda
+field-info,photography,fotografia
+field-info,economics,economia
+field-info,art,arte
+field-info,electronics,eletrônica
+field-info,psychiatry,psiquiatria
+field-info,telecom,telecomunicações
+field-info,physiology,fisiologia
+field-info,zoology,zoologia
+field-info,pharmacology,farmacologia
+field-info,fishing,pesca
+field-info,biochemistry,bioquímica
+field-info,Greek myth.,mit. grega
+field-info,clothing,vestuário
+field-info,electricity,eletricidade
+field-info,psychology,psicologia
+field-info,aviation,aviação
+field-info,genetics,genética
+field-info,geometry,geometria
+field-info,Japanese myth.,mit. japonesa
+field-info,engineering,engenharia
+field-info,logic,lógica
+field-info,kabuki,kabuki
+field-info,meteorology,meteorologia
+field-info,wrestling,luta livre
+field-info,horse racing,turfe
+field-info,stock market,mercado de ações
+field-info,boxing,boxe
+field-info,film,cinema
+field-info,agriculture,agricultura
+field-info,skiing,esqui
+field-info,Roman myth.,mit. romana
+field-info,noh,nô
+field-info,dentistry,odontologia
+field-info,railway,ferrovia
+field-info,archeology,arqueologia
+field-info,statistics,estatística
+field-info,television,televisão
+field-info,politics,política
+field-info,skating,patinação
+field-info,psychoanalysis,psicanálise
+field-info,Chinese myth.,mit. chinesa
+field-info,geography,geografia
+field-info,civil eng.,eng. civil
+field-info,entomology,entomologia
+field-info,ornithology,ornitologia
+field-info,ecology,ecologia
+field-info,surgery,cirurgia
+field-info,mech. eng.,eng. mecânica
+field-info,motorsport,automobilismo
+field-info,gardening,jardinagem
+field-info,mining,mineração
+field-info,embryology,embriologia
+field-info,veterinary medicine,veterinária
+field-info,crystal,cristalografia
+field-info,pathology,patologia
+field-info,audiovisual,audiovisual
+field-info,manga,mangá
+field-info,paleontology,paleontologia
+dialect-info,Kansai,dialeto de Kansai
+dialect-info,Ryūkyū,dialeto de Ryūkyū
+dialect-info,Ōsaka,dialeto de Ōsaka
+dialect-info,Kantō,dialeto de Kantō
+dialect-info,Kyōto,dialeto de Kyōto
+dialect-info,Tōhoku,dialeto de Tōhoku
+dialect-info,Hokkaidō,dialeto de Hokkaidō
+dialect-info,Kyūshū,dialeto de Kyūshū
+dialect-info,Brazil,japonês do Brasil
+dialect-info,Tosa,dialeto de Tosa
+dialect-info,Tsugaru,dialeto de Tsugaru
+dialect-info,Nagano,dialeto de Nagano
+lang-source-label,Language of Origin,idioma de origem
+lang-source-wasei,wasei,wasei
+info-gloss-label,Explanation,Explicação
+info-gloss-label,Literally,Literalmente
+info-gloss-label,Figuratively,Figurativamente
+reference-label,See also,Ver também
+reference-label,Antonym,Antônimo
+forms-label,forms,formas
+sense-note-label,Note,Nota
+graphic-attribution, by , por 
+graphic-attribution,Photo,Foto
+graphic-attribution,public domain,domínio público

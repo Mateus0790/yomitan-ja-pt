@@ -1,0 +1,48 @@
+dicionario,tag,nome,nota
+Jitendex-PT,★,★,entrada de alta prioridade
+Jitendex-PT,priority form,forma prioritária,grafia ou leitura de alta prioridade deste termo
+Jitendex-PT,irregular form,forma irregular,grafia ou leitura irregular deste termo
+Jitendex-PT,old kanji form,kanji antigo,forma antiga do caractere (kyūjitai)
+Jitendex-PT,obsolete reading,leitura obsoleta,leitura arcaica ou obsoleta deste termo
+Jitendex-PT,rarely used form,forma rara,forma raramente usada deste termo
+Jitendex-PT,ateji form,ateji,leitura ateji (fonética)
+Jitendex-PT,special reading,leitura especial,jukujikun (leitura idiomática de um composto de kanji) ou gikun (leitura idiossincrática de um kanji)
+JMnedict-PT,char,char,personagem
+JMnedict-PT,company,company,nome de empresa
+JMnedict-PT,creat,creat,criatura
+JMnedict-PT,dei,dei,divindade
+JMnedict-PT,doc,doc,documento
+JMnedict-PT,ev,ev,evento
+JMnedict-PT,fem,fem,nome próprio feminino
+JMnedict-PT,fict,fict,ficção
+JMnedict-PT,given,given,"nome próprio, gênero não especificado"
+JMnedict-PT,group,group,grupo
+JMnedict-PT,leg,leg,lenda
+JMnedict-PT,masc,masc,nome próprio masculino
+JMnedict-PT,myth,myth,mitologia
+JMnedict-PT,obj,obj,objeto
+JMnedict-PT,organization,organization,nome de organização
+JMnedict-PT,oth,oth,outro
+JMnedict-PT,person,person,nome completo de uma pessoa específica
+JMnedict-PT,place,place,nome de lugar
+JMnedict-PT,product,product,nome de produto
+JMnedict-PT,relig,relig,religião
+JMnedict-PT,serv,serv,serviço
+JMnedict-PT,ship,ship,nome de navio
+JMnedict-PT,station,station,estação ferroviária
+JMnedict-PT,surname,surname,sobrenome
+JMnedict-PT,unclass,unclass,nome não classificado
+JMnedict-PT,work,work,"nome de obra de arte, literatura, música etc."
+KANJIDIC-PT-completo,jouyou,jouyou,incluído na lista de caracteres de uso regular (jōyō)
+KANJIDIC-PT-completo,jinmeiyou,jinmeiyou,incluído na lista de caracteres para nomes próprios (jinmeiyō)
+KANJIDIC-PT-completo,freq,freq,Frequência
+KANJIDIC-PT-completo,grade,grade,Ano escolar
+KANJIDIC-PT-completo,jlpt,jlpt,Nível do JLPT
+KANJIDIC-PT-completo,strokes,strokes,Número de traços
+KANJIDIC-PT-completo,jis208,jis208,Código kuten JIS X 0208-1997
+KANJIDIC-PT-completo,jis212,jis212,Código kuten JIS X 0212-1990
+KANJIDIC-PT-completo,jis213,jis213,Código kuten JIS X 0213-2000
+KANJIDIC-PT-completo,ucs,ucs,Código Unicode (hexadecimal)
+KANJIDIC-PT-completo,four_corner,four_corner,Código dos quatro cantos
+KANJIDIC-PT-completo,misclass,misclass,Classificação incorreta
+KANJIDIC-PT-completo,skip,skip,Código SKIP

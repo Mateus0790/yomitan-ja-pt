@@ -1,11 +1,11 @@
 {
   "title": "KANJIDIC-PT-completo",
   "format": 3,
-  "revision": "2026-10-20",
+  "revision": "2026-11-12",
   "sequenced": false,
   "author": "CosmionLabs",
   "url": "https://github.com/yomidevs/yomitan-import",
-  "description": "Kanji japonês → português brasileiro (base KANJIDIC2). Pré-lançamento: parte das definições ainda está em inglês (tag pt-pendente/pt-parcial).",
+  "description": "Kanji japonês → português brasileiro (base KANJIDIC2).",
   "attribution": "This publication has included material from the JMdict (EDICT, etc.) dictionary files in accordance with the licence provisions of the Electronic Dictionaries Research Group. See http://www.edrdg.org/",
   "isUpdatable": true,
   "indexUrl": "https://github.com/CosmionLabs/yomitan-ja-pt/releases/latest/download/KANJIDIC-PT-completo.json",
